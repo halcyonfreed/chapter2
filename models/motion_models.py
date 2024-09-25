@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 from .ode_solvers import *
 from torch.func import vmap, jacrev
-from .ME_efficient_kan import *
+from ME import *
 
 class MotionModelBase(nn.Module):
     def __init__(self, solver='rk4', dt=4e-2, n_states=4, mixtures=8, static_f_dim=6,

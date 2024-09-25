@@ -1,6 +1,7 @@
 import torch_geometric as ptg
-from .utils import *
-from .ME_efficient_kan import *
+# from .utils import *
+from utils import *
+from ME import *
 
 def create_sequential_gnn(input_size=8, output_size=8, hidden_size=32, n_heads=3, dropout=0.1,
                           layers=1, activation='relu', alpha=0.2, gnn_layer="graphconv", edge_dim=None):

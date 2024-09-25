@@ -1,8 +1,8 @@
 import math
 import torch.nn.functional as F
-from .gnn_layers import *
-from .motion_models import *
-from .ME_efficient_kan import *
+from gnn_layers import *
+from motion_models import *
+from ME import *
 
 class GRUGNNCell(nn.Module):
     def __init__(self, input_size=8, hidden_size=64, n_heads=3,
